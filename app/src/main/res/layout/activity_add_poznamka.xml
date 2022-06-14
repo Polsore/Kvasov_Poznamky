@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".AddPoznamkyActivity">
+
+    <EditText
+        android:id="@+id/meno_poznamky"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Napis nazov poznamky"
+        android:layout_margin="8dp">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/text_poznamky"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Napis text"
+        android:minLines="10"
+        android:gravity="top"
+        android:padding="16dp"
+        android:layout_below="@+id/meno_poznamky"
+        android:layout_margin="8dp">
+    </EditText>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Save">
+
+    </Button>
+
+</RelativeLayout>

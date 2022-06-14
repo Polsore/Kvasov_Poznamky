@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Kvasov_Poznamky">
+        <activity android:name=".AddPoznamkyActivity"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
