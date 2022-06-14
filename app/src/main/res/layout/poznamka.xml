@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/teal_700"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/meno_poznamky"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nazov"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:layout_toLeftOf="@+id/obrazok_delete"
+            android:layout_margin="8dp">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/obrazok_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_delete"
+            android:tint="@color/white">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/text_poznamky"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/meno_poznamky"
+            android:layout_margin="8dp"
+            android:maxLines="10"
+            android:padding="8dp"
+            android:text="Text"
+            android:textColor="@color/white">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
