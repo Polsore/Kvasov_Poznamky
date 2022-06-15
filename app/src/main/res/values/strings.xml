@@ -8,4 +8,7 @@
     <string name="hint_poznamka_nazov">Napis nazov poznamky</string>
     <string name="hint_poznamka_text">Napis text</string>
     <string name="tlacidlo_save">Save</string>
+    <!--save_error.xml-->
+    <string name="dialog_text">Pre ulozenie vyplnte vsetky polia</string>
+    <string name="dialog_tlacidlo_ok">Ok</string>
 </resources>

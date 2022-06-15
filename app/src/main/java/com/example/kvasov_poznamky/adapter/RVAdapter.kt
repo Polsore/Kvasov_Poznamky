@@ -10,6 +10,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.kvasov_poznamky.R
 import com.example.kvasov_poznamky.entity.Poznamka
+import com.example.kvasov_poznamky.interfaces.ClickInterface
 import java.util.ArrayList
 
 class RVAdapter(val clickInterface: ClickInterface) : RecyclerView.Adapter<RVAdapter.ViewHolder>() {
@@ -20,7 +21,6 @@ class RVAdapter(val clickInterface: ClickInterface) : RecyclerView.Adapter<RVAda
         val menoPoznamky : TextView = itemView.findViewById(R.id.meno_poznamky)
         val textPoznamky : TextView = itemView.findViewById(R.id.text_poznamky)
         val tlacidloDelete : ImageView = itemView.findViewById(R.id.obrazok_delete)
-        //val hotovo : CheckBox = itemView.findViewById(R.id.hotovo)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -34,14 +34,6 @@ class RVAdapter(val clickInterface: ClickInterface) : RecyclerView.Adapter<RVAda
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.menoPoznamky.setText(vsetkyPoznamky.get(position).nazov)
         holder.textPoznamky.setText(vsetkyPoznamky.get(position).text)
-
-        /*holder.tlacidloDelete.setOnClickListener {
-            deleteInterface.onDeleteClick(vsetkyPoznamky.get(position))
-        }
-
-        holder.itemView.setOnClickListener {
-            clickInterface.onClick(vsetkyPoznamky.get(position))
-        }*/
     }
 
     override fun getItemCount(): Int {
@@ -54,12 +46,4 @@ class RVAdapter(val clickInterface: ClickInterface) : RecyclerView.Adapter<RVAda
         notifyDataSetChanged()
     }
 
-}
-
-/*interface DeleteInterface {
-    fun onDeleteClick(poznamka: Poznamka)
-}*/
-
-interface ClickInterface {
-    fun onClick(poznamka: Poznamka)
 }

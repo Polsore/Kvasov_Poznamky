@@ -1,4 +1,4 @@
-package com.example.kvasov_poznamky
+package com.example.kvasov_poznamky.activity
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel

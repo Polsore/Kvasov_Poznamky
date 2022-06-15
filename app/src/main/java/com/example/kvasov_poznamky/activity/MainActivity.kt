@@ -1,4 +1,4 @@
-package com.example.kvasov_poznamky
+package com.example.kvasov_poznamky.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -8,9 +8,11 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.kvasov_poznamky.adapter.ClickInterface
+import com.example.kvasov_poznamky.R
 import com.example.kvasov_poznamky.adapter.RVAdapter
 import com.example.kvasov_poznamky.entity.Poznamka
+import com.example.kvasov_poznamky.interfaces.ClickInterface
+import timber.log.Timber
 
 class MainActivity : AppCompatActivity(), ClickInterface {
 
@@ -19,6 +21,8 @@ class MainActivity : AppCompatActivity(), ClickInterface {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        Timber.i("onCreate called")
 
         val recyclerView : RecyclerView = findViewById(R.id.zoznam_poznamok)
         recyclerView.layoutManager = LinearLayoutManager(this)
@@ -31,6 +35,44 @@ class MainActivity : AppCompatActivity(), ClickInterface {
         viewModel.poznamkyLiveData.observe(this, Observer {
             adapter.updateData(it)
         })
+
+
+    }
+
+    override fun onStart() {
+        super.onStart()
+
+        Timber.i("onStart Called")
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+        Timber.i("onResume Called")
+    }
+
+    override fun onPause() {
+        super.onPause()
+
+        Timber.i("onPause Called")
+    }
+
+    override fun onStop() {
+        super.onStop()
+
+        Timber.i("onStop Called")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+
+        Timber.i("onDestroy Called")
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+
+        Timber.i("onRestart Called")
     }
 
     fun pridajPoznamku(view: View) {
