@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Kvasov_Poznamky</string>
+
+    <!--  poznamka.xml  -->
+    <string name="poznamka_nazov">Nazov</string>
+    <string name="poznamka_text">Text</string>
+    <!--  activity_add_poznamka.xml  -->
+    <string name="hint_poznamka_nazov">Napis nazov poznamky</string>
+    <string name="hint_poznamka_text">Napis text</string>
+    <string name="tlacidlo_save">Save</string>
 </resources>

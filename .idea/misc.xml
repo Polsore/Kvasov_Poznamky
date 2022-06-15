@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/dimka/Desktop/Kvasov_Poznamky/app/src/main/res/layout/activity_add_poznamka.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/dimka/Desktop/Kvasov_Poznamky/app/src/main/res/layout-land/activity_add_poznamka.xml" value="0.1728395061728395" />
+        <entry key="..\:/Users/dimka/Desktop/Kvasov_Poznamky/app/src/main/res/layout-land/activity_main.xml" value="0.1728395061728395" />
+        <entry key="..\:/Users/dimka/Desktop/Kvasov_Poznamky/app/src/main/res/layout/activity_add_poznamka.xml" value="0.25" />
         <entry key="..\:/Users/dimka/Desktop/Kvasov_Poznamky/app/src/main/res/layout/activity_main.xml" value="0.15534420289855072" />
         <entry key="..\:/Users/dimka/Desktop/Kvasov_Poznamky/app/src/main/res/layout/poznamka.xml" value="0.25" />
       </map>

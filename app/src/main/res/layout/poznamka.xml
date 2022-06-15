@@ -14,7 +14,7 @@
             android:id="@+id/meno_poznamky"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nazov"
+            android:text="@string/poznamka_nazov"
             android:textSize="18sp"
             android:textColor="@color/white"
             android:padding="8dp"
@@ -44,7 +44,7 @@
             android:layout_margin="8dp"
             android:maxLines="10"
             android:padding="8dp"
-            android:text="Text"
+            android:text="@string/poznamka_text"
             android:textColor="@color/white">
 
         </TextView>
