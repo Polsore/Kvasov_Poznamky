@@ -13,6 +13,11 @@ import com.example.kvasov_poznamky.entity.Poznamka
 import com.example.kvasov_poznamky.interfaces.ClickInterface
 import java.util.ArrayList
 
+/**
+ * RV Adapter
+ *
+ * Aby pracovat z RecyclerView listom
+ */
 class RVAdapter(val clickInterface: ClickInterface) : RecyclerView.Adapter<RVAdapter.ViewHolder>() {
 
     private val vsetkyPoznamky = ArrayList<Poznamka>()

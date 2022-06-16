@@ -10,5 +10,4 @@ class PoznamkyApplication : Application() {
 
         Timber.plant(Timber.DebugTree())
     }
-
 }

@@ -10,6 +10,11 @@ import com.example.kvasov_poznamky.R
 import com.example.kvasov_poznamky.dialogs.SaveErrorDialog
 import com.example.kvasov_poznamky.entity.Poznamka
 
+/**
+ * Add poznamky activity
+ *
+ * Obrazovka s polamy gde mozem zadat nazov a text poznamky
+ */
 class AddPoznamkyActivity : AppCompatActivity() {
 
     lateinit var viewModel: MainViewModel
@@ -27,6 +32,12 @@ class AddPoznamkyActivity : AppCompatActivity() {
 
     }
 
+    /**
+     * Pridaj poznamku
+     * Tlacislo SAVE spusty tuto funkciu v ktorej do main obrazovky prida novu poznamky
+     * Ak bude neco napisane vo vsetkych polach
+     * Ak nie spusti save_error_dialog
+     */
     private fun pridajPoznamku() {
 
         var nazovPoznamky: EditText = findViewById(R.id.meno_poznamky)

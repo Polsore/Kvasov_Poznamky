@@ -10,6 +10,11 @@ import com.example.kvasov_poznamky.entity.Poznamka
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
+/**
+ * Main view model
+ *
+ * Trieda MainViewModel, ktorá odosiela požiadavky od používateľa cez interface databáze.
+ */
 class MainViewModel(app: Application) : AndroidViewModel(app) {
     val poznamkyLiveData: LiveData<List<Poznamka>>
     val repozitory: DataBaseRepozitory

@@ -11,7 +11,11 @@ import com.example.kvasov_poznamky.R
 import com.example.kvasov_poznamky.activity.MainViewModel
 import com.example.kvasov_poznamky.entity.Poznamka
 
-
+/**
+ * Save error dialog
+ *
+ * Create empty Save error dialog ak po
+ */
 class SaveErrorDialog : DialogFragment() {
 
     override fun onCreateView(

@@ -14,6 +14,11 @@ import com.example.kvasov_poznamky.entity.Poznamka
 import com.example.kvasov_poznamky.interfaces.ClickInterface
 import timber.log.Timber
 
+/**
+ * Main activity
+ *
+ * Main obrazok s zoznamom poznamok
+ */
 class MainActivity : AppCompatActivity(), ClickInterface {
 
     lateinit var viewModel: MainViewModel
@@ -39,47 +44,21 @@ class MainActivity : AppCompatActivity(), ClickInterface {
 
     }
 
-    override fun onStart() {
-        super.onStart()
-
-        Timber.i("onStart Called")
-    }
-
-    override fun onResume() {
-        super.onResume()
-
-        Timber.i("onResume Called")
-    }
-
-    override fun onPause() {
-        super.onPause()
-
-        Timber.i("onPause Called")
-    }
-
-    override fun onStop() {
-        super.onStop()
-
-        Timber.i("onStop Called")
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-
-        Timber.i("onDestroy Called")
-    }
-
-    override fun onRestart() {
-        super.onRestart()
-
-        Timber.i("onRestart Called")
-    }
-
+    /**
+     * Pridaj poznamku
+     *
+     * funkcia otvory obrazovku gde zmozem pridat poznamku
+     */
     fun pridajPoznamku(view: View) {
         val intent = Intent(this, AddPoznamkyActivity::class.java)
         startActivity(intent)
     }
 
+    /**
+     * On click
+     *
+     * tlacidlo delete
+     */
     override fun onClick(poznamka: Poznamka) {
         viewModel.deletePoznamku(poznamka)
     }
